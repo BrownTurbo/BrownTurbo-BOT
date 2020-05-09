@@ -18,3 +18,4 @@ jobs:
         exempt-pr-labels: 'awaiting-approval,work-in-progress'
         days-before-stale: 30
         days-before-close: 7
+        only-labels: 'dev'
