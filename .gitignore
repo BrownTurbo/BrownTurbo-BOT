@@ -1,0 +1,12 @@
+node_modules/**
+.vscode/**
+.github/**
+logs/**
+*.json
+*.bat
+*.log
+package-lock.json
+.npmrc
+.npmignore
+.vscodeignore
+Procfile
