@@ -1,0 +1,68 @@
+{
+  "name": "creative-generation",
+  "description": "Discord multipurpose Application which helps on Moderating Servers and Streaming(Youtube/Spotify/SoundClound/Customized Music Source) Music to Members.",
+  "version": "0.0.1-beta",
+  "deprecated": false,
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.16.3",
+    "npm": ">=6.12.0"
+  },
+  "scripts": {
+    "launch": "node index.js",
+    "dev": "node --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    ".npmignore",
+    ".npmrc",
+    "botmsgs.json",
+    "CHANGELOG.md",
+    "config.json",
+    "index.js",
+    "LICENSE",
+    "logs/",
+    "media/",
+    "media/regions",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zorono/CreativeGeneration.git"
+  },
+  "homepage": "https://discord.gg/mnE5vdq",
+  "bugs": {
+    "url": "https://github.com/Zorono/CreativeGeneration/issues"
+  },
+  "keywords": [
+    "Moderating",
+    "Streaming",
+    "Discord-bot",
+    "Discord-api",
+    "Discordbot",
+    "Discord-js",
+    "Discord",
+    "Management",
+    "Management-system",
+    "Fun"
+  ],
+  "author": "[BR]John_Magdy <johnmagdy437@yahoo.com> (https://facebook.com/BR.Zorono)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "discord.js": "^11.6.4",
+    "fs": "^0.0.1-security",
+    "giphy-api": "^2.0.1",
+    "google-images": "^2.1.0",
+    "log4js": "^5.2.2",
+    "mime-types": "^2.1.27",
+    "node-os-utils": "^1.1.0",
+    "node.extend": "^2.0.2",
+    "path": "^0.12.7",
+    "querystring": "^0.2.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "xml2js": "^0.4.23"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "BOTname": "Creative Generation",
+    "BOTtoken": "Mzk4MjMxODg2OTczMTA4MjI1.Xa95JA.zuRNno_YDVDK3hIdxDJ3NLb4kTU",
+    "BOTclientID": "398231886973108225",
+    "scriptVersion": "v0.0.3.2-beta",
+    "first_release_date": "October 14, 2019 15:50:30",
+    "last_release_date": "April 26, 2020 00:48:00",
+    "cmdPrefix": "-",
+    "DevID": "284447705101631489",
+    "logsdirectory": "logs",
+    "excepath": "bot_exceptions.log",
+    "rejepath": "bot_rejections.log",
+    "warnpath": "bot_warnings.log",
+    "logspath": "bot_logs.log",
+    "GoogleCSEID": "015700430649349970783:qdiq6x2qetd",
+    "GoogleAPIKey": "AIzaSyAsAHvPP8Cy52ljVhr3G5dM-pGrYkE-0h0",
+    "mediadirectory": "media",
+    "regionmedia_directory": "media/regions",
+    "GiphyKey": "LctgoqXoTCNWkcLUVtrOVVs9XtspqX5a",
+    "DebugMode": true
+}

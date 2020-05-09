@@ -1,0 +1,7 @@
+{
+    "permission": {
+	   "message": {
+	      "error": "You don't have permissions to use this feature!"
+		}
+	}
+}
