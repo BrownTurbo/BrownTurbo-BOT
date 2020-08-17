@@ -3,9 +3,8 @@ node_modules/**
 .github/**
 .git/**
 *.bat
-.travis
 .npmrc
 .gitignore
 .vscodeignore
 .editorconfig
-Procfile
+*.log

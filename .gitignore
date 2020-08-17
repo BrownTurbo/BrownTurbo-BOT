@@ -1,5 +1,7 @@
-node_modules/**
-.vscode/**
-.github/**
+node_modules/
+.vscode/
+.github/
 *.bat
 .vscodeignore
+logs/*.log
+target/

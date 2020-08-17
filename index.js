@@ -15,13 +15,13 @@ const client = new Discord.Client({autoReconnect: true, max_message_cache: 0});
 const GoogleCSE = new GoogleImages(config.GoogleCSEID, config.GoogleAPIKey);
 
 log4js.configure({
-  appenders: { 
+  appenders: {
         logs: { type: 'file', filename: path.join(__dirname, config.logsdirectory + '/' + config.logspath) },
         exceptions: {  type: 'file', filename: path.join(__dirname, config.logsdirectory + '/' + config.excepath) },
         warnings: {  type: 'file', filename: path.join(__dirname, config.logsdirectory + '/' + config.warnpath) },
-        rejections: {  type: 'file', filename: path.join(__dirname, config.logsdirectory + '/' + config.rejepath) }		
+        rejections: {  type: 'file', filename: path.join(__dirname, config.logsdirectory + '/' + config.rejepath) }
   },
-  categories: { 
+  categories: {
         default: { appenders: ['logs'], level: 'debug' },
         'exception': { appenders: ['exceptions'], level: 'error' },
         'warning': { appenders: ['warnings'], level: 'warn' },
@@ -39,9 +39,29 @@ process.on('exit', (code) => {
   console.debug("BOT is exiting with code: " + code);
   logger.debug("BOT is exiting with code: " + code);
 });
-process.on('uncaughtException', UncaughtExceptionHandler);
-process.on('unhandledRejection', UnhandledRejectionHandler);
-process.on('warning', UnhandledWarningHandler);
+process.on('uncaughtException', function (err) {
+    console.log("Uncaught Exception Detected... (Check the logs: `../logs/" + config.excepath + "`)");
+    excep.error("Uncaught Exception Detected!!");
+    excep.error("ERROR: " + err);
+    if (err.code == 'ECONNRESET') excep.error("Stack trace: " + err.stack);
+    else process.exit(0);
+});
+process.on('unhandledRejection', function (reason, p)
+{
+	console.log("Unhandled Rejection...  (Check the logs: `../logs/" + config.rejepath + "`)");
+	rejec.fatal('Unhandled Rejection...');
+	rejec.fatal('Issue at: ' + p);
+	rejec.fatal('Reason: ' + reason);
+});
+process.on('warning', function (warning) {
+    console.log("Uncaught Warning Detected... (Check the logs: `../logs/" + config.warnpath + "`)");
+    warni.warn("Uncaught Warning Detected!!");
+    warni.warn("Warning Name: " + warning.name);
+    warni.warn("Warning Message: " + warning.message);
+    warni.warn("Warning Code: " + warning.code);
+    warni.warn("Warning Stack trace: " + warning.stack);
+    warni.warn("Warning Details: " + warning.detail);
+});
 const EmbedColors =
 {
        default: 0,
@@ -57,7 +77,7 @@ const EmbedColors =
 	   cyan: 1277892,
 	   brown: 11356937,
 	   dark_navy: 2899536,
-       dark_grey: 9936031,	  
+       dark_grey: 9936031,
        dark_aqua: 1146986,
        dark_green: 2067276,
        dark_blue: 2123412,
@@ -157,7 +177,7 @@ client.on("guildCreate", guild => {
 																	       .addField("Managed Members", client.users.size, true)
 																	       .addField("Managed Channels", client.channels.size, true)
 																	       .addField("Managed Guilds", client.guilds.size, true)
-																	       .setColor(EmbedColors.aqua));																	   
+																	       .setColor(EmbedColors.aqua));
 });
 
 client.on("guildDelete", guild => {
@@ -222,7 +242,7 @@ var commands = [
 			parameters: [],
 			execute: function(message, params) {
 				message.channel.send("Pinging ...").then((msg) => {
-					msg.edit("Guild Command Processing Ping is " + (Date.now() - msg.createdTimestamp) + "ms. API Latency is " + Math.round(client.ping) + "ms");
+					msg.edit("Guild Command-Processing Ping is " + (Date.now() - msg.createdTimestamp) + "ms. API Latency is " + Math.round(client.ping) + "ms");
 				});
 			}
 		},
@@ -421,7 +441,7 @@ var commands = [
         		if(member.highestRole.comparePositionTo(message.guild.me.highestRole) > 0 || member.id == client.user.id || member.id == message.author.id) return message.reply("I cannot manage this user! Do they have a higher role? Do I have ban permissions?");
                 if(!(ToAddRole = message.guild.roles.find(val => val.name === params[2]))) return message.reply("Couldn't find that role!");
 				if(member.roles.has(ToAddRole.id)) return message.reply("This user already have that role!");
-				
+
         		member.addRole(ToAddRole.id);
 				message.channel.send("<@" + message.author.id + "> just given <@" + member.id + "> \"" + params[2] + "\" role!");
 			}
@@ -442,7 +462,7 @@ var commands = [
         		if(member.highestRole.comparePositionTo(message.guild.me.highestRole) > 0 || member.id == client.user.id || member.id == message.author.id) return message.reply("I cannot manage this user! Do they have a higher role? Do I have ban permissions?");
 				if(!(ToAddRole = message.guild.roles.find(val => val.name === params[2]))) return message.reply("Couldn't find that role!");
 				if(!member.roles.has(ToAddRole.id)) return message.reply("This user doesn't have that role!");
-				
+
         		member.removeRole(ToAddRole.id);
 				message.channel.send("<@" + message.author.id + "> just taken \"" + params[2] + "\" role from <@" + member.id + ">!");
 			}
@@ -463,13 +483,13 @@ var commands = [
 					  message.channel.send("Command Prefix have been successfully set to: `" + params[1] + "`");
 					  if(CheckDebugMode() == true)
 					  {
-					     logger.info("Command Prefix have been successfully set to: " + params[1]); 
+					     logger.info("Command Prefix have been successfully set to: " + params[1]);
 					     console.info("Command Prefix have been successfully set to: " + params[1]);
 					  }
 					  config.cmdPrefix = params[1];
                       filesystem.writeFileSync(path.join(__dirname, "config.json"), JSON.stringify(config, null, 4));
-                      client.user.setActivity("Serving " + client.guilds.size + " servers | " + config.cmdPrefix + "help");					  
-               	      break;				  
+                      client.user.setActivity("Serving " + client.guilds.size + " servers | " + config.cmdPrefix + "help");
+               	      break;
 			 	  }
                	  else if(params[1] !== supported_prefix[i])
                   {
@@ -478,8 +498,8 @@ var commands = [
 						message.channel.send("Couldn't Customizate the Command Prefix, Unsupported Command Prefix: `" + params[1] + "`");
 						message.channel.send("Supported Command Prefix(s): `" + supported_prefix.join("` `") + "`");
 						break;
-				  	}					  
-			   	  }				   
+				  	}
+			   	  }
 				}
 			}
 		},
@@ -493,7 +513,7 @@ var commands = [
 				if(!message.channel.permissionsFor(message.author).has("ADMINISTRATOR") && !message.channel.permissionsFor(message.author).has("MANAGE_GUILD") && !message.channel.permissionsFor(message.author).has("MANAGE_MESSAGES")) return message.reply(botmessages.permission.message.error);
     			if(params[1] < 2 || params[1] > 100) return message.channel.send("Please provide a number between 2 and 100 as the amount of messages to delete!");
 				var logMSG;
-				message.channel.fetchMessages({ 
+				message.channel.fetchMessages({
 	                limit: parseInt(params[1], 10)
                 }).then((msgCollection) => {
 	                msgCollection.forEach((msg) => {
@@ -525,16 +545,16 @@ var commands = [
 					if(c.command !== 'commands' && c.command !== 'acommands' && c.premium == false)
 					{
 				   		response += "\n" + config.cmdPrefix + c.command;
-				
+
 				   		for(var j = 0; j < c.parameters.length; j++) {
 				      		response += " <" + c.parameters[j] + ">";
 				   		}
-				
+
 				   		response += ": " + c.description;
 						verifiedCMDs++;
 					}
 				}
-			    
+
 				response += "```";
 				message.author.send((verifiedCMDs > 0 ? response : "Unknown ERROR, Please contact <@" + config.DevID + "> for more info!"));
 				message.reply("Check your DMs!").then((msg) => {
@@ -558,16 +578,16 @@ var commands = [
 					if(c.command !== 'commands' && c.command !== 'acommands' && c.premium == true)
 					{
 				   		response += "\n" + config.cmdPrefix + c.command;
-				
+
 				   		for(var j = 0; j < c.parameters.length; j++) {
 				      		response += " <" + c.parameters[j] + ">";
 				   		}
-				
+
 				   		response += ": " + c.description;
 						verifiedCMDs++;
 					}
 				}
-			    
+
 				response += "```";
 				message.author.send((verifiedCMDs > 0 ? response : "Unknown ERROR, Please contact <@" + config.DevID + "> for more info!"));
 				message.reply("Check your DMs!").then((msg) => {
@@ -676,14 +696,14 @@ async function FetchMembersCountByStatus(userStatus = 'online')
 
 function TimeLeft(timestamp) {
     var endDate = new Date(d);
-    var diff = endDate - new Date(); 
+    var diff = endDate - new Date();
 
     var hours   = Math.floor(diff / 3.6e6);
     var minutes = Math.floor((diff % 3.6e6) / 6e4);
     var seconds = Math.floor((diff % 6e4) / 1000);
-    console.log('Time remaining to ' + endDate.toISOString() + 
+    console.log('Time remaining to ' + endDate.toISOString() +
                 ' or\n' + endDate.toString() + ' local is\n' +
-                 hours + ' hours, ' +  minutes + ' minutes and ' + 
+                 hours + ' hours, ' +  minutes + ' minutes and ' +
                  seconds + ' seconds');
 }
 
@@ -697,7 +717,7 @@ function ToTime(timeinsec) {
     minutes = MathFlooringFloat(seconds / (60));
     seconds -= MathFlooringFloat(minutes * (60));
     return (days > 0 ? days + (days == 1 ? ' day, ' : ' days, ') : '') + (hours > 0 ? hours + (hours == 1 ? ' hour, ' : ' hours, ') : '') +
-	       (minutes > 0 ? minutes + (minutes == 1 ? ' minute, ' : ' minutes, ') : '') + (seconds > 0 ? seconds + (seconds == 1 ? ' second' : ' seconds') : ''); 
+	       (minutes > 0 ? minutes + (minutes == 1 ? ' minute, ' : ' minutes, ') : '') + (seconds > 0 ? seconds + (seconds == 1 ? ' second' : ' seconds') : '');
 }
 
 function ReturnTZTime()
@@ -732,7 +752,7 @@ function ReturnTimelapse(start, till)
 	return ret;
 }
 
-function UncaughtExceptionHandler(err)
+/*function UncaughtExceptionHandler(err)
 {
 	console.log("Uncaught Exception Detected... (Check the logs: `../logs/" + config.excepath + "`)");
 	excep.error("Uncaught Exception Detected!!");
@@ -758,6 +778,6 @@ function UnhandledWarningHandler(warning)
 	warni.warn("Warning Code: " + warning.code);
 	warni.warn("Warning Stack trace: " + warning.stack);
 	warni.warn("Warning Details: " + warning.detail);
-}
+}*/
 
 client.login(config.BOTtoken);
