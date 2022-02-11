@@ -34,10 +34,10 @@ const excep = log4js.getLogger('exception');
 const warni = log4js.getLogger('warning');
 const rejec = log4js.getLogger('rejection');
 
-process.on('exit', (code) => {
-  if(CheckDebugMode() != true) return;
-  console.debug("BOT is exiting with code: " + code);
-  logger.debug("BOT is exiting with code: " + code);
+process.on('exit', function (code) {
+    if(CheckDebugMode() != true) return;
+    console.debug("BOT is exiting with code: " + code);
+    logger.debug("BOT is exiting with code: " + code);
 });
 process.on('uncaughtException', function (err) {
     console.log("Uncaught Exception Detected... (Check the logs: `../logs/" + config.excepath + "`)");
@@ -95,7 +95,7 @@ client.on('ready', () => {
 	 console.info("INFO: DEBUG Mode is Enabled!!");
 	 console.debug("NodeJS Executable Path: " + process.execPath);
 	 console.debug("NodeJS Version: " + process.version);
-	 console.debug("NodeJS Process PID: " + process.pid);
+	 console.debug("NodeJS Process ID: " + process.pid);
 	 console.debug("NodeJS Process Debug Port: " + process.debugPort);
 	 console.debug("Operating System: " + GetNodeOS());
 	 console.debug("CPU Architecture: " + GetNodeArch());
