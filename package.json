@@ -52,7 +52,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "discord.js": "^13.6.0",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "giphy-api": "^2.0.2",
     "google-images": "^2.1.0",
     "log4js": "^6.4.1",
