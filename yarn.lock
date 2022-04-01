@@ -2,12 +2,12 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8c9
 
 "@discordjs/builders@npm:^0.11.0":
   version: 0.11.0
-  resolution: "@discordjs/builders@npm:0.11.0"
+  resolution: "@discordjs/builders@npm:0.11.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Fbuilders%2F-%2Fbuilders-0.11.0.tgz"
   dependencies:
     "@sindresorhus/is": ^4.2.0
     discord-api-types: ^0.26.0
@@ -20,37 +20,37 @@ __metadata:
 
 "@discordjs/collection@npm:^0.4.0":
   version: 0.4.0
-  resolution: "@discordjs/collection@npm:0.4.0"
+  resolution: "@discordjs/collection@npm:0.4.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Fcollection%2F-%2Fcollection-0.4.0.tgz"
   checksum: fa8fc4246921f3230eb6c5d6d4dc0caf9dd659fcc903175944edf4fb0a9ed9913fdf164733d3f1e644ef469bc79b0d38a526ee620b92169cb40e79b40b0c716b
   languageName: node
   linkType: hard
 
 "@sapphire/async-queue@npm:^1.1.9":
   version: 1.2.0
-  resolution: "@sapphire/async-queue@npm:1.2.0"
+  resolution: "@sapphire/async-queue@npm:1.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40sapphire%2Fasync-queue%2F-%2Fasync-queue-1.2.0.tgz"
   checksum: 8230beaeb974503c94a36d2ff18b703c32a047de60fb056ea8792a5559a8807449ef18f66dba46e2d85de0486d6a42d4b0935d7d0a6ffbf5cad803a55dcbfae0
   languageName: node
   linkType: hard
 
 "@sindresorhus/is@npm:^4.2.0":
   version: 4.4.0
-  resolution: "@sindresorhus/is@npm:4.4.0"
+  resolution: "@sindresorhus/is@npm:4.4.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40sindresorhus%2Fis%2F-%2Fis-4.4.0.tgz"
   checksum: 1d2471a75e03ce2182c3a3d014d027addeaeae1a7a2adfdb03c91cce17900b207e493db012e35ffa21808c563ce3b8e2e7c24646b3d5c27467e08bef8b0e16f0
   languageName: node
   linkType: hard
 
 "@types/keyv@npm:^3.1.1":
-  version: 3.1.3
-  resolution: "@types/keyv@npm:3.1.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fkeyv%2F-%2Fkeyv-3.1.3.tgz"
+  version: 3.1.4
+  resolution: "@types/keyv@npm:3.1.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fkeyv%2F-%2Fkeyv-3.1.4.tgz"
   dependencies:
     "@types/node": "*"
-  checksum: b5f8aa592cc21c16d99e69aec0976f12b893b055e4456d90148a610a6b6088e297b2ba5f38f8c8280cef006cfd8f9ec99e069905020882619dc5fc8aa46f5f27
+  checksum: e009a2bfb50e90ca9b7c6e8f648f8464067271fd99116f881073fa6fa76dc8d0133181dd65e6614d5fb1220d671d67b0124aef7d97dc02d7e342ab143a47779d
   languageName: node
   linkType: hard
 
 "@types/node-fetch@npm:^2.5.12":
   version: 2.5.12
-  resolution: "@types/node-fetch@npm:2.5.12"
+  resolution: "@types/node-fetch@npm:2.5.12::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fnode-fetch%2F-%2Fnode-fetch-2.5.12.tgz"
   dependencies:
     "@types/node": "*"
     form-data: ^3.0.0
@@ -60,7 +60,7 @@ __metadata:
 
 "@types/node@npm:*":
   version: 17.0.17
-  resolution: "@types/node@npm:17.0.17"
+  resolution: "@types/node@npm:17.0.17::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fnode%2F-%2Fnode-17.0.17.tgz"
   checksum: 8ddba2829acdf1684fbd8fd248ec13f033efb70ecd1085677b547c40ef8e936a006b95eac3bdc28c47939c62526f3f027afeb4a930e30e4394923bbae4626476
   languageName: node
   linkType: hard
@@ -76,7 +76,7 @@ __metadata:
 
 "@types/ws@npm:^8.2.2":
   version: 8.2.2
-  resolution: "@types/ws@npm:8.2.2"
+  resolution: "@types/ws@npm:8.2.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fws%2F-%2Fws-8.2.2.tgz"
   dependencies:
     "@types/node": "*"
   checksum: 308957864b9a5a0378ac82f1b084fa31b1bbe85106fb0d84ed2b392e4829404f21ab6ab2c1eb782d556e59cd33d57c75ad2d0cedc4b9b9d0ca3b2311bc915578
@@ -195,7 +195,7 @@ __metadata:
     fs: ^0.0.2
     giphy-api: ^2.0.2
     google-images: ^2.1.0
-    log4js: ^6.4.3
+    log4js: ^6.4.4
     mime-types: ^2.1.35
     node-os-utils: ^1.3.6
     node.extend: ^2.0.2
@@ -216,22 +216,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-format@npm:^4.0.5":
-  version: 4.0.5
-  resolution: "date-format@npm:4.0.5"
-  checksum: 8ef7b34699ea218ff9e049e2650e0f7e4c0820d92b937dc4934ade93782bf7d9647819e45cb50c0c3dc8d67d4fb210a0a114353fcb7f1400506e91be9fdd189a
+"date-format@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "date-format@npm:4.0.6::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdate-format%2F-%2Fdate-format-4.0.6.tgz"
+  checksum: 167cf41f22ee0075a7a134c4a8f7179dcfdd818c55c90a29f369173e8230bd06eb2feef9d0efe18eba4a2ca7eb82e1a4e13140c67328f1a08d05608e020d2b82
   languageName: node
   linkType: hard
 
-"debug@npm:^4.3.3":
-  version: 4.3.3
-  resolution: "debug@npm:4.3.3"
+"debug@npm:^4.3.4":
+  version: 4.3.4
+  resolution: "debug@npm:4.3.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdebug%2F-%2Fdebug-4.3.4.tgz"
   dependencies:
     ms: 2.1.2
   peerDependenciesMeta:
     supports-color:
       optional: true
-  checksum: 14472d56fe4a94dbcfaa6dbed2dd3849f1d72ba78104a1a328047bb564643ca49df0224c3a17fa63533fd11dd3d4c8636cd861191232a2c6735af00cc2d4de16
+  checksum: 3dbad3f94ea64f34431a9cbf0bafb61853eda57bff2880036153438f50fb5a84f27683ba0d8e5426bf41a8c6ff03879488120cf5b3a761e77953169c0600a708
   languageName: node
   linkType: hard
 
@@ -244,14 +244,14 @@ __metadata:
 
 "discord-api-types@npm:^0.26.0":
   version: 0.26.1
-  resolution: "discord-api-types@npm:0.26.1"
+  resolution: "discord-api-types@npm:0.26.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdiscord-api-types%2F-%2Fdiscord-api-types-0.26.1.tgz"
   checksum: 3660c649b490de79715893d54aa2eb49723be1444de56951dba780d02ed968af0a6f87365a3aed452df518959dcd84b9817ad9e2a393051735b34100833adc56
   languageName: node
   linkType: hard
 
 "discord.js@npm:^13.6.0":
   version: 13.6.0
-  resolution: "discord.js@npm:13.6.0"
+  resolution: "discord.js@npm:13.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdiscord.js%2F-%2Fdiscord.js-13.6.0.tgz"
   dependencies:
     "@discordjs/builders": ^0.11.0
     "@discordjs/collection": ^0.4.0
@@ -320,7 +320,7 @@ __metadata:
 
 "flatted@npm:^3.2.5":
   version: 3.2.5
-  resolution: "flatted@npm:3.2.5"
+  resolution: "flatted@npm:3.2.5::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fflatted%2F-%2Fflatted-3.2.5.tgz"
   checksum: 24a8153addda522a046d2e2172ac52efc700e452087418d669dd590c3ff96ad45db32dfdfe240127b8dcd12bc4184fdffd445f80bb089594d8f3b5770d11c3ca
   languageName: node
   linkType: hard
@@ -334,7 +334,7 @@ __metadata:
 
 "form-data@npm:^3.0.0":
   version: 3.0.1
-  resolution: "form-data@npm:3.0.1"
+  resolution: "form-data@npm:3.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fform-data%2F-%2Fform-data-3.0.1.tgz"
   dependencies:
     asynckit: ^0.4.0
     combined-stream: ^1.0.8
@@ -345,7 +345,7 @@ __metadata:
 
 "form-data@npm:^4.0.0":
   version: 4.0.0
-  resolution: "form-data@npm:4.0.0"
+  resolution: "form-data@npm:4.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fform-data%2F-%2Fform-data-4.0.0.tgz"
   dependencies:
     asynckit: ^0.4.0
     combined-stream: ^1.0.8
@@ -367,7 +367,7 @@ __metadata:
 
 "fs-extra@npm:^10.0.1":
   version: 10.0.1
-  resolution: "fs-extra@npm:10.0.1"
+  resolution: "fs-extra@npm:10.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ffs-extra%2F-%2Ffs-extra-10.0.1.tgz"
   dependencies:
     graceful-fs: ^4.2.0
     jsonfile: ^6.0.1
@@ -378,7 +378,7 @@ __metadata:
 
 "fs@npm:^0.0.2":
   version: 0.0.2
-  resolution: "fs@npm:0.0.2"
+  resolution: "fs@npm:0.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ffs%2F-%2Ffs-0.0.2.tgz"
   checksum: 7fd90770f7f2d4c0c8568f440baf6d882f9fdb6f7f7607369bb2d4b66c74dfb27985a1d9628ed63e74fbbd1a27fb8e206a2ecd8db6332bae3792e55fc89355ea
   languageName: node
   linkType: hard
@@ -408,7 +408,7 @@ __metadata:
 
 "giphy-api@npm:^2.0.2":
   version: 2.0.2
-  resolution: "giphy-api@npm:2.0.2"
+  resolution: "giphy-api@npm:2.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fgiphy-api%2F-%2Fgiphy-api-2.0.2.tgz"
   checksum: c050e9217b924f35a9d6c18204c46270ad3d6edba6794227a80f271c22f776d7172e7a78e05c9a7ac55017ecb4c43c8ef4fed8eb7a5ddac2c9afdc559394a31d
   languageName: node
   linkType: hard
@@ -443,7 +443,7 @@ __metadata:
 
 "graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0":
   version: 4.2.9
-  resolution: "graceful-fs@npm:4.2.9"
+  resolution: "graceful-fs@npm:4.2.9::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fgraceful-fs%2F-%2Fgraceful-fs-4.2.9.tgz"
   checksum: 68ea4e07ff2c041ada184f9278b830375f8e0b75154e3f080af6b70f66172fabb4108d19b3863a96b53fc068a310b9b6493d86d1291acc5f3861eb4b79d26ad6
   languageName: node
   linkType: hard
@@ -550,7 +550,7 @@ __metadata:
 
 "json-schema@npm:0.4.0":
   version: 0.4.0
-  resolution: "json-schema@npm:0.4.0"
+  resolution: "json-schema@npm:0.4.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fjson-schema%2F-%2Fjson-schema-0.4.0.tgz"
   checksum: 66389434c3469e698da0df2e7ac5a3281bcff75e797a5c127db7c5b56270e01ae13d9afa3c03344f76e32e81678337a8c912bdbb75101c62e487dc3778461d72
   languageName: node
   linkType: hard
@@ -564,7 +564,7 @@ __metadata:
 
 "jsonfile@npm:^6.0.1":
   version: 6.1.0
-  resolution: "jsonfile@npm:6.1.0"
+  resolution: "jsonfile@npm:6.1.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fjsonfile%2F-%2Fjsonfile-6.1.0.tgz"
   dependencies:
     graceful-fs: ^4.1.6
     universalify: ^2.0.0
@@ -577,7 +577,7 @@ __metadata:
 
 "jsprim@npm:^1.2.2":
   version: 1.4.2
-  resolution: "jsprim@npm:1.4.2"
+  resolution: "jsprim@npm:1.4.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fjsprim%2F-%2Fjsprim-1.4.2.tgz"
   dependencies:
     assert-plus: 1.0.0
     extsprintf: 1.3.0
@@ -589,21 +589,21 @@ __metadata:
 
 "lodash@npm:^4.17.19":
   version: 4.17.21
-  resolution: "lodash@npm:4.17.21"
+  resolution: "lodash@npm:4.17.21::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Flodash%2F-%2Flodash-4.17.21.tgz"
   checksum: 46dd2c44aee07a019d3eadf4e39f10a3fdd0f6c298ad2dd140cbc185d7d15a67299c6b3dbf22c486dda6463b859eb7ec3a6712a3ac4f2027b09d8dff48c2b774
   languageName: node
   linkType: hard
 
-"log4js@npm:^6.4.3":
-  version: 6.4.3
-  resolution: "log4js@npm:6.4.3"
+"log4js@npm:^6.4.4":
+  version: 6.4.4
+  resolution: "log4js@npm:6.4.4::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Flog4js%2F-%2Flog4js-6.4.4.tgz"
   dependencies:
-    date-format: ^4.0.5
-    debug: ^4.3.3
+    date-format: ^4.0.6
+    debug: ^4.3.4
     flatted: ^3.2.5
     rfdc: ^1.3.0
-    streamroller: ^3.0.5
-  checksum: 03b277d67e1fe000f82eb5314affc80c8b50561ba8f1c5983ff9f37050460dd3a2d21616ad47f5ffd47702ca16e52816df85d100262b013e9f60e777afedc074
+    streamroller: ^3.0.6
+  checksum: 3c0d383f40b24d2e99222a4f4c75f1ee293baf2bed0a147d726e1a5d7bc7f759e6a824d65cb570461d07c6c160613d09847bdc3d19ad9250b97b686cb2d2d359
   languageName: node
   linkType: hard
 
@@ -616,14 +616,14 @@ __metadata:
 
 "mime-db@npm:1.52.0":
   version: 1.52.0
-  resolution: "mime-db@npm:1.52.0"
+  resolution: "mime-db@npm:1.52.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fmime-db%2F-%2Fmime-db-1.52.0.tgz"
   checksum: 0d99a03585f8b39d68182803b12ac601d9c01abfa28ec56204fa330bc9f3d1c5e14beb049bafadb3dbdf646dfb94b87e24d4ec7b31b7279ef906a8ea9b6a513f
   languageName: node
   linkType: hard
 
 "mime-types@npm:^2.1.12, mime-types@npm:^2.1.35, mime-types@npm:~2.1.19":
   version: 2.1.35
-  resolution: "mime-types@npm:2.1.35"
+  resolution: "mime-types@npm:2.1.35::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fmime-types%2F-%2Fmime-types-2.1.35.tgz"
   dependencies:
     mime-db: 1.52.0
   checksum: 89a5b7f1def9f3af5dad6496c5ed50191ae4331cc5389d7c521c8ad28d5fdad2d06fd81baf38fed813dc4e46bb55c8145bb0ff406330818c9cf712fb2e9b3836
@@ -632,14 +632,14 @@ __metadata:
 
 "ms@npm:2.1.2":
   version: 2.1.2
-  resolution: "ms@npm:2.1.2"
+  resolution: "ms@npm:2.1.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fms%2F-%2Fms-2.1.2.tgz"
   checksum: 673cdb2c3133eb050c745908d8ce632ed2c02d85640e2edb3ace856a2266a813b30c613569bf3354fdf4ea7d1a1494add3bfa95e2713baa27d0c2c71fc44f58f
   languageName: node
   linkType: hard
 
 "node-fetch@npm:^2.6.1":
   version: 2.6.7
-  resolution: "node-fetch@npm:2.6.7"
+  resolution: "node-fetch@npm:2.6.7::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fnode-fetch%2F-%2Fnode-fetch-2.6.7.tgz"
   dependencies:
     whatwg-url: ^5.0.0
   peerDependencies:
@@ -653,7 +653,7 @@ __metadata:
 
 "node-os-utils@npm:^1.3.6":
   version: 1.3.6
-  resolution: "node-os-utils@npm:1.3.6"
+  resolution: "node-os-utils@npm:1.3.6::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fnode-os-utils%2F-%2Fnode-os-utils-1.3.6.tgz"
   checksum: 8ce66b648061dff3978c6e63ca7fa8748b285d28a5ebb57c6e6ce2250c34d8be408344d24a79590725a542eb4b6b297b1fa32ac6d73d85a3871b16afa204df6c
   languageName: node
   linkType: hard
@@ -729,7 +729,7 @@ __metadata:
 
 "querystring@npm:^0.2.1":
   version: 0.2.1
-  resolution: "querystring@npm:0.2.1"
+  resolution: "querystring@npm:0.2.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fquerystring%2F-%2Fquerystring-0.2.1.tgz"
   checksum: 7b83b45d641e75fd39cd6625ddfd44e7618e741c61e95281b57bbae8fde0afcc12cf851924559e5cc1ef9baa3b1e06e22b164ea1397d65dd94b801f678d9c8ce
   languageName: node
   linkType: hard
@@ -789,7 +789,7 @@ __metadata:
 
 "rfdc@npm:^1.3.0":
   version: 1.3.0
-  resolution: "rfdc@npm:1.3.0"
+  resolution: "rfdc@npm:1.3.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Frfdc%2F-%2Frfdc-1.3.0.tgz"
   checksum: 58bcf93f2e17bbd0e317b97d5671bc4737d4b5aff1be1a758add587daa65b16b4ea55f0ee5415ae66a185d5f6c0c5b4d856598fb7f84c9b91cb5c4e414a3ff37
   languageName: node
   linkType: hard
@@ -843,14 +843,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"streamroller@npm:^3.0.5":
-  version: 3.0.5
-  resolution: "streamroller@npm:3.0.5"
+"streamroller@npm:^3.0.6":
+  version: 3.0.6
+  resolution: "streamroller@npm:3.0.6::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fstreamroller%2F-%2Fstreamroller-3.0.6.tgz"
   dependencies:
-    date-format: ^4.0.5
-    debug: ^4.3.3
+    date-format: ^4.0.6
+    debug: ^4.3.4
     fs-extra: ^10.0.1
-  checksum: 89d74b477c06cea19d9a9547575c22a704a68d9a85694f4e9caddc57585cce826bd9831547dac64522dac80bf4ac181c172297472953f343ecd54b927efdaedb
+  checksum: 80728554978ca01f30a10adef2029aedd8aff936f6b709748dadf44f34becc4aa582223bfb97a1159a479f12668b3156377fa081e76ae4fc02e7a283491f706b
   languageName: node
   linkType: hard
 
@@ -873,21 +873,21 @@ __metadata:
 
 "tr46@npm:~0.0.3":
   version: 0.0.3
-  resolution: "tr46@npm:0.0.3"
+  resolution: "tr46@npm:0.0.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftr46%2F-%2Ftr46-0.0.3.tgz"
   checksum: 2bdbb985e27dc770f1010f47e776a67e05a6cfcab86498bdf308f75fa0bf110297ebb272084275c0da119df3c2bf28cf2635296332f47c7ee19fe3cbe416178e
   languageName: node
   linkType: hard
 
 "ts-mixer@npm:^6.0.0":
   version: 6.0.0
-  resolution: "ts-mixer@npm:6.0.0"
+  resolution: "ts-mixer@npm:6.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fts-mixer%2F-%2Fts-mixer-6.0.0.tgz"
   checksum: 5f6daf648f2a935840e27010dd93b0278a31e9993fe0520b1edf8ee72ecfee7a6222c88d1524e6ba6dd6688f1db2d48691bedb6000ca041976c02e66dbd27817
   languageName: node
   linkType: hard
 
 "tslib@npm:^2.3.1":
   version: 2.3.1
-  resolution: "tslib@npm:2.3.1"
+  resolution: "tslib@npm:2.3.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftslib%2F-%2Ftslib-2.3.1.tgz"
   checksum: 9cb7b6a3078da09e989d1b9c4e3d5503aa60a002c59965d2075a7fd71bc0272a54bd4c0d4ea46772cc43cfafa4c266941f7346ed63bd9c6eca58894e596ea167
   languageName: node
   linkType: hard
@@ -910,7 +910,7 @@ __metadata:
 
 "universalify@npm:^2.0.0":
   version: 2.0.0
-  resolution: "universalify@npm:2.0.0"
+  resolution: "universalify@npm:2.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Funiversalify%2F-%2Funiversalify-2.0.0.tgz"
   checksum: 2406a4edf4a8830aa6813278bab1f953a8e40f2f63a37873ffa9a3bc8f9745d06cc8e88f3572cb899b7e509013f7f6fcc3e37e8a6d914167a5381d8440518c44
   languageName: node
   linkType: hard
@@ -971,14 +971,14 @@ __metadata:
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
-  resolution: "webidl-conversions@npm:3.0.1"
+  resolution: "webidl-conversions@npm:3.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fwebidl-conversions%2F-%2Fwebidl-conversions-3.0.1.tgz"
   checksum: c92a0a6ab95314bde9c32e1d0a6dfac83b578f8fa5f21e675bc2706ed6981bc26b7eb7e6a1fab158e5ce4adf9caa4a0aee49a52505d4d13c7be545f15021b17c
   languageName: node
   linkType: hard
 
 "whatwg-url@npm:^5.0.0":
   version: 5.0.0
-  resolution: "whatwg-url@npm:5.0.0"
+  resolution: "whatwg-url@npm:5.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fwhatwg-url%2F-%2Fwhatwg-url-5.0.0.tgz"
   dependencies:
     tr46: ~0.0.3
     webidl-conversions: ^3.0.0
@@ -988,7 +988,7 @@ __metadata:
 
 "ws@npm:^8.4.0":
   version: 8.5.0
-  resolution: "ws@npm:8.5.0"
+  resolution: "ws@npm:8.5.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fws%2F-%2Fws-8.5.0.tgz"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ^5.0.2
@@ -1020,7 +1020,7 @@ __metadata:
 
 "zod@npm:^3.11.6":
   version: 3.11.6
-  resolution: "zod@npm:3.11.6"
+  resolution: "zod@npm:3.11.6::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fzod%2F-%2Fzod-3.11.6.tgz"
   checksum: ea181e47db30169eb1894f0baa70b1d6dd44970fc34533f6a42ae54709c7ce6d283a790e7cc53c27a259a5113255f05ec82f83f8bed09ca397c987905616ffc6
   languageName: node
   linkType: hard
