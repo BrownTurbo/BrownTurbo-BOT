@@ -51,7 +51,7 @@
   "author": "[BR]John_Magdy <johnmagdy437@yahoo.com> (https://facebook.com/BR.Zorono)",
   "license": "Apache-2.0",
   "dependencies": {
-    "discord.js": "^14.2.0",
+    "discord.js": "^14.3.0",
     "fs": "^0.0.2",
     "giphy-api": "^2.0.2",
     "google-images": "^2.1.0",
