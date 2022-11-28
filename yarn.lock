@@ -5,38 +5,47 @@ __metadata:
   version: 6
   cacheKey: 8c9
 
-"@discordjs/builders@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@discordjs/builders@npm:1.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Fbuilders%2F-%2Fbuilders-1.2.0.tgz"
+"@discordjs/builders@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@discordjs/builders@npm:1.3.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Fbuilders%2F-%2Fbuilders-1.3.0.tgz"
   dependencies:
-    "@sapphire/shapeshift": ^3.5.1
-    discord-api-types: ^0.37.3
+    "@discordjs/util": ^0.1.0
+    "@sapphire/shapeshift": ^3.7.0
+    discord-api-types: ^0.37.12
     fast-deep-equal: ^3.1.3
     ts-mixer: ^6.0.1
     tslib: ^2.4.0
-  checksum: 19949a574496ff353ce4d6c00b7bd2be8e5f8a30b0cee817d8e8e9d83127adfecc1d18bf2ec0e73013cdfb8bbe6da2e3c234cf43a1c776a777efa128038c968f
+  checksum: e88133be93fb525381f0b5e0333dc5e8583c3c50e9fae2b51fc7e24f6bdb44c436d1ac174734e81fc97a880550283e7d15e6d6e2459ba9412d709eef14611f28
   languageName: node
   linkType: hard
 
-"@discordjs/collection@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@discordjs/collection@npm:1.1.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Fcollection%2F-%2Fcollection-1.1.0.tgz"
-  checksum: 956df5d996ffc06c31c413481aa1187e2fdf296d8deadc55a1b51ccdcc942b81dca3e4eed279543a344d3d866b39ee001572a896842dd66f748af39234d83f01
-  languageName: node
-  linkType: hard
-
-"@discordjs/rest@npm:^1.2.0":
+"@discordjs/collection@npm:^1.2.0":
   version: 1.2.0
-  resolution: "@discordjs/rest@npm:1.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Frest%2F-%2Frest-1.2.0.tgz"
+  resolution: "@discordjs/collection@npm:1.2.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Fcollection%2F-%2Fcollection-1.2.0.tgz"
+  checksum: 76eae566834d78437363a3437d10c74b485b0a8b0dd350745e7bbb45d0bdc834b8ce6c1008c41728f7cbdf9be80a3147e8006610ed8d34bec8b31b7c521d40c2
+  languageName: node
+  linkType: hard
+
+"@discordjs/rest@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@discordjs/rest@npm:1.3.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Frest%2F-%2Frest-1.3.0.tgz"
   dependencies:
-    "@discordjs/collection": ^1.1.0
+    "@discordjs/collection": ^1.2.0
+    "@discordjs/util": ^0.1.0
     "@sapphire/async-queue": ^1.5.0
     "@sapphire/snowflake": ^3.2.2
-    discord-api-types: ^0.37.10
+    discord-api-types: ^0.37.12
     file-type: ^18.0.0
     tslib: ^2.4.0
-    undici: ^5.10.0
-  checksum: fa414f2a92e94ad587c0a793e5a378cc0597ed062fe1509314b7c29f925b7a9cc013efad8f572f589d520a9dca4f19a4cc2403f14b89d38e6c61aa2292d96cfe
+    undici: ^5.11.0
+  checksum: 703c815e9f231b56cad0e71ed805420d875f1a9522e0c4d7be291a2dab5fdf65933b3f592bd3112fe665e213d7c97e32a2e94504a9133de09ccdd327aa53636a
+  languageName: node
+  linkType: hard
+
+"@discordjs/util@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@discordjs/util@npm:0.1.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40discordjs%2Futil%2F-%2Futil-0.1.0.tgz"
+  checksum: 880e15cd761437a21cf17b8a9dab50e7e5418fcc77dc34037c31a52b871fab1b958218ab6218aafd20af8b7a4e658a705d3f257268324773a285d9a06368c1b9
   languageName: node
   linkType: hard
 
@@ -47,13 +56,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/shapeshift@npm:^3.5.1":
-  version: 3.6.0
-  resolution: "@sapphire/shapeshift@npm:3.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40sapphire%2Fshapeshift%2F-%2Fshapeshift-3.6.0.tgz"
+"@sapphire/shapeshift@npm:^3.7.0":
+  version: 3.7.1
+  resolution: "@sapphire/shapeshift@npm:3.7.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40sapphire%2Fshapeshift%2F-%2Fshapeshift-3.7.1.tgz"
   dependencies:
     fast-deep-equal: ^3.1.3
     lodash.uniqwith: ^4.5.0
-  checksum: 31b426424d064c516144c6eda07dfa0e44d7cbb8309dde919b923aa6ae939faac6384fa4d08db391a8da11efa3a83c18c9be1ebd053ba29403e61f5e2450b788
+  checksum: 06afc7015aa51c8f0e1f2aafe07ba1c6d8452ac68b4c86ffd32ba7ab3dad196f2adf5558436bb4cdbdcf1e33112c158777f44ba4b43f0b2cab8cf51f561f72d4
   languageName: node
   linkType: hard
 
@@ -180,9 +189,9 @@ __metadata:
   linkType: hard
 
 "capture-stack-trace@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "capture-stack-trace@npm:1.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fcapture-stack-trace%2F-%2Fcapture-stack-trace-1.0.1.tgz"
-  checksum: 493668211de1307009589aeba5c382dc8b1011a41ca02f033b5f5a489ee174323a4b31d5afdc4bd48f64e1dd23b2521ddda4dbdcd382767e140f94b555f8f332
+  version: 1.0.2
+  resolution: "capture-stack-trace@npm:1.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fcapture-stack-trace%2F-%2Fcapture-stack-trace-1.0.2.tgz"
+  checksum: 13295e8176e8de74bcbe0e4fd938bed9eb4204b4cc200210ff46df91cb20b69e86f6ef42f408a59454f8b62e567ef0ee6ee5b5e7e16e686668bc77f2741542b4
   languageName: node
   linkType: hard
 
@@ -222,11 +231,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "creative-generation@workspace:."
   dependencies:
-    discord.js: ^14.5.0
+    discord.js: ^14.6.0
     fs: ^0.0.2
     giphy-api: ^2.0.2
     google-images: ^2.1.0
-    log4js: ^6.7.0
+    log4js: ^6.7.1
     mime-types: ^2.1.35
     node-os-utils: ^1.3.7
     node.extend: ^2.0.2
@@ -273,29 +282,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.10, discord-api-types@npm:^0.37.3":
-  version: 0.37.11
-  resolution: "discord-api-types@npm:0.37.11::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdiscord-api-types%2F-%2Fdiscord-api-types-0.37.11.tgz"
-  checksum: 80e52875dd2596c3cb3eb656911b9e4ceb830c2129695e52bfac88c721360cedb7af281ace7017ec8ecef09fb8f9f88836d9f1436f10effc5cecc0ad89752bea
+"discord-api-types@npm:^0.37.12":
+  version: 0.37.20
+  resolution: "discord-api-types@npm:0.37.20::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdiscord-api-types%2F-%2Fdiscord-api-types-0.37.20.tgz"
+  checksum: 58b80d514182eead737a907cfbc3604aa2921615b4fbf1815777d5c714066564b94ec7dbce5588cbfdb65fb6d3703aec3c77b97ea8431318e51243b513615d59
   languageName: node
   linkType: hard
 
-"discord.js@npm:^14.5.0":
-  version: 14.5.0
-  resolution: "discord.js@npm:14.5.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdiscord.js%2F-%2Fdiscord.js-14.5.0.tgz"
+"discord.js@npm:^14.6.0":
+  version: 14.6.0
+  resolution: "discord.js@npm:14.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fdiscord.js%2F-%2Fdiscord.js-14.6.0.tgz"
   dependencies:
-    "@discordjs/builders": ^1.2.0
-    "@discordjs/collection": ^1.1.0
-    "@discordjs/rest": ^1.2.0
+    "@discordjs/builders": ^1.3.0
+    "@discordjs/collection": ^1.2.0
+    "@discordjs/rest": ^1.3.0
+    "@discordjs/util": ^0.1.0
     "@sapphire/snowflake": ^3.2.2
     "@types/ws": ^8.5.3
-    discord-api-types: ^0.37.10
+    discord-api-types: ^0.37.12
     fast-deep-equal: ^3.1.3
     lodash.snakecase: ^4.1.1
     tslib: ^2.4.0
-    undici: ^5.10.0
+    undici: ^5.11.0
     ws: ^8.9.0
-  checksum: 1534ac6a36966c448580a8e26ddde65d6a17dd0874c9b6e99b6534f3a41f97ad0a87e79af852b8e483a2c1d25924476a58be951bb67878a4c268153b099f3f24
+  checksum: a1b5319835171eef54b9079398cb71482d09eb8425e6f1a83e9d7a4eaf7179fc19ac43780d6dee8a436dd4b81e61ac5e36ca07f59beb3ca19facd929e69bc2a7
   languageName: node
   linkType: hard
 
@@ -643,16 +653,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"log4js@npm:^6.7.0":
-  version: 6.7.0
-  resolution: "log4js@npm:6.7.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Flog4js%2F-%2Flog4js-6.7.0.tgz"
+"log4js@npm:^6.7.1":
+  version: 6.7.1
+  resolution: "log4js@npm:6.7.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Flog4js%2F-%2Flog4js-6.7.1.tgz"
   dependencies:
     date-format: ^4.0.14
     debug: ^4.3.4
     flatted: ^3.2.7
     rfdc: ^1.3.0
     streamroller: ^3.1.3
-  checksum: f6321c5ccd343282ee1087a7a46dd6b00bd7104d80cd82b5c62b8cfc912de5e83cacd2abcbf834e4f47bbebede5dbd12eae08670e85bc42d14f6b22447d080eb
+  checksum: ea4f1c4b6aea8533181ffcf2ded6f73aea8a38b004c85d0731ce0c7372c9f63a3c00af1311435f38908bd19634b72ca72d1dfe470fee3f6b650e0234bc840007
   languageName: node
   linkType: hard
 
@@ -970,16 +980,16 @@ __metadata:
   linkType: hard
 
 "ts-mixer@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "ts-mixer@npm:6.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fts-mixer%2F-%2Fts-mixer-6.0.1.tgz"
-  checksum: 5e72b62d843b03afc15dd653ffb48d104497695342b7194049668fa490786b1bebbf7ba3dc00a221d39bb70304feb3c3fbcc56798e6e915cf758687b44b8c0b5
+  version: 6.0.2
+  resolution: "ts-mixer@npm:6.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fts-mixer%2F-%2Fts-mixer-6.0.2.tgz"
+  checksum: e6a097086a5071a99e5e09cfec24eebc2b77101bde57e5b382f5af6287f91559421905c3eda0c826114b308796189ed907caa46fe3eb5c88f12c75bc9c496451
   languageName: node
   linkType: hard
 
 "tslib@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "tslib@npm:2.4.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftslib%2F-%2Ftslib-2.4.0.tgz"
-  checksum: 12c59c52109a9317146968d8d7c045bdc9a069d6bd0c72c3fced3f2999872a91d8e5e34002219ac633df4a643b1eaa198c856f5c1d6275609899fb8704c89e23
+  version: 2.4.1
+  resolution: "tslib@npm:2.4.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Ftslib%2F-%2Ftslib-2.4.1.tgz"
+  checksum: b49d8a21f73c038567bf92a627a9c6327fb23c5222b57b7e67a6e0ac8736feb05873707c474411c8fd34d9bcc7a0a288c6889cd14c23379c771cb74c3d05cbe6
   languageName: node
   linkType: hard
 
@@ -999,12 +1009,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.10.0":
-  version: 5.11.0
-  resolution: "undici@npm:5.11.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fundici%2F-%2Fundici-5.11.0.tgz"
+"undici@npm:^5.11.0":
+  version: 5.13.0
+  resolution: "undici@npm:5.13.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fundici%2F-%2Fundici-5.13.0.tgz"
   dependencies:
     busboy: ^1.6.0
-  checksum: 20669ef4023d24a75e81ed8142829f525f16af14d61f833b5f19cfc6bed7c706adde343a190d764dcceb227eba3211222d2b194010462a2ca221a7da0487f563
+  checksum: 15b8f7df4bd8c9bf9d777456d16b51eb621f25d3ee60f575a8693192a647b3a8b33671e984386636e8df42085488f86a52d0d47db1b8c22edcc591134892a424
   languageName: node
   linkType: hard
 
