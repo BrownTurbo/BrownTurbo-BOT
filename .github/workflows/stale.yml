@@ -17,5 +17,6 @@ jobs:
         stale-pr-label: 'inactive-pr,stale'
         exempt-pr-labels: 'awaiting-approval,work-in-progress'
         days-before-stale: 30
-        days-before-close: 7
-        only-labels: 'dev'
+        days-before-close: 650
+        remove-issue-stale-when-updated: true
+        remove-pr-stale-when-updated: true
