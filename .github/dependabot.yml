@@ -9,6 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    versioning-strategy: increase
     commit-message:
       prefix: "[dependabot->npm]"
     pull-request-branch-name:
@@ -19,3 +20,17 @@ updates:
       - "update"
     assignees:
       - "Zorono"
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "[dependabot->github-actions]"
+    pull-request-branch-name:
+      separator: "-"
+    labels:
+      - "github-actions"
+      - "dependencies"
+      - "update"
+    reviewers:
+      - "Zorono
